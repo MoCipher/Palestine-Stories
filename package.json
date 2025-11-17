@@ -1,0 +1,20 @@
+{
+  "name": "palestine-stories-app",
+  "version": "1.0.0",
+  "description": "A web application to share stories, photos, and videos representing Palestinian culture.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\" \"npm run dev --prefix admin\"",
+    "build": "npm run build --prefix client && npm run build --prefix admin",
+    "start": "npm run start --prefix server",
+    "seed": "ts-node scripts/seed.ts"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
